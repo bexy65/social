@@ -1,0 +1,39 @@
+import Home from "../../pages/Home";
+import Login from "../../pages/Login";
+import Raids from "../../pages/Raids";
+import Account from "../../pages/Account";
+import CreateEvent from "../../pages/CreateEvent";
+import Events from "../../pages/Events";
+
+export const routes = [
+    {
+        path: "/",
+        element: Home,
+        protected: false
+    },
+    {
+        path: "/login",
+        element: Login,
+        protected: false
+    },
+    {
+        path: "/raids",
+        element: Raids,
+        protected: false
+    },
+    {
+        path: "/profile",
+        element: Account,
+        protected: true
+    },
+    {
+        path: "/create",
+        element: CreateEvent,
+        protected: true
+    },
+    {
+        path: "/events",
+        element: Events,
+        protected: false
+    }
+];
