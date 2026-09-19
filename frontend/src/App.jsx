@@ -1,27 +1,29 @@
-import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Header from '../components/layout/Header'
 import BottomNav from '../components/layout/BottomNav'
-BottomNav
 
 function App() {
-
   return (
-    <>
-      <BrowserRouter>
-        <div className="h-screen overflow-hidden">
-          <Header />
+    <BrowserRouter>
+      <div className="h-screen flex flex-col overflow-hidden">
+
+        <Header />
+
+        {/* Every page automatically gets the available height + scrolling */}
+        <main className="flex-1 min-h-0 overflow-y-auto">
           <Routes>
             <Route index element={<Home />} />
-            <Route path='/login' element={<Login />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
-          <BottomNav/>
-        </div>
-      </BrowserRouter>
-    </>
+        </main>
+
+        <BottomNav />
+
+      </div>
+    </BrowserRouter>
   )
 }
 

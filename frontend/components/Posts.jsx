@@ -21,15 +21,15 @@ function Posts() {
     return (
         <>
             <main className="h-full flex-1 overflow-y-auto px-2 lg:px-0 pb-16">
-                <div className=" text-start p-2">
-                    <div className="m-0 border">what u think?</div>
-                    <div className="border">
+                <div className=" text-start p-2 mx-auto max-w-2xl border-b">
+                    <div className="m-0 ">what u think?</div>
+                    <div className="">
                         <p>button section</p>
                     </div>
                 </div>
                 <div className="text-start mx-auto max-w-2xl">
                     {posts.map((post) => (
-                        <div className="mb-2 border py-2" key={post.id}>
+                        <div className="mb-2 border-b py-2" key={post.id}>
                             <h2>{post.title}</h2>
                             <p>{post.body}</p>
                         </div>

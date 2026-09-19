@@ -6,11 +6,9 @@ import Posts from "../components/Posts";
 function Home() {
     return (
         <>
-            <div className="flex h-[calc(100vh-4rem)]">
 
-                <Posts />
+            <Posts />
                 
-            </div>
         </>
     )
 }
