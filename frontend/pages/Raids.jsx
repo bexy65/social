@@ -20,7 +20,7 @@ function Raids() {
 
     return (
     <>
-        <div className="flex flex-row p-2 my-3">
+        <div className="flex flex-row py-2 my-3 border-b">
             <select onChange={(e) => setExpansion(e.target.value)} name="expansion" id="expansion" className="border">
                 <option value="0">All</option>
                 {expansions.map(exp => (
