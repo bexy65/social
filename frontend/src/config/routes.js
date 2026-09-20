@@ -5,6 +5,7 @@ import Account from "../../pages/Account";
 import CreateEvent from "../../pages/CreateEvent";
 import Events from "../../pages/Events";
 import RaidPage from "../../pages/RaidPage";
+import EventPage from "../../pages/EventPage";
 
 export const routes = [
     {
@@ -40,6 +41,11 @@ export const routes = [
     {
         path: "/raid/:id",
         element: RaidPage,
+        protected: false
+    },
+    {
+        path: "/event/:id",
+        element: EventPage,
         protected: false
     }
 ];

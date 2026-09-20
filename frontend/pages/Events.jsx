@@ -13,12 +13,18 @@ function Events() {
             </div>
             {openEvents.map(e => (
                 <div className='border mb-2 flex p-2 justify-center' key={e.id}>
-                    <p className='w-1/4 text-start'>{e.raidName}</p>
+                    <p className='w-1/4 text-start' onClick={()=>navigate(`/event/${e.id}`)}>
+                        {e.raidName}
+                    </p>
+
                     {/* Needs timer to be added to countdown and show start and countdown */}
                     <p className='w-1/4'>{e.startsAt}</p>
+
                     <p className='w-1/4'>{e.slots.filled} / {e.slots.total} </p>
                     <div className='w-1/4 flex flex-col md:flex-row gap-2'>
-                        <button className='button w-full border'>Join</button>
+                        <button className='button w-full border'>Request</button>
+
+                        {/* open modal to text to event creater */}
                         <button className='button w-full border'>DM Leader</button>
                     </div>
                 </div>  
