@@ -7,7 +7,7 @@ function Header(){
                 <NavLink to={'/'}> World Of Warcraft </NavLink>
             </div>
             <div className=" p-2 w-1/2 text-end">
-                <button className="px-2 py-1 border rounded-md">
+                <button className="px-2 py-1 border">
                     <NavLink to={'/login'}> Login </NavLink>
                 </button>
             </div>

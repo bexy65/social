@@ -26,7 +26,7 @@ function RaidInfo() {
                 <img
                     src={raid.image}
                     alt={raid.name}
-                    className="w-full md:w-64 h-46 object-cover rounded-lg"
+                    className="w-full md:w-64 h-46 object-cover"
                 />
 
                 <div className="text-start">
@@ -45,7 +45,7 @@ function RaidInfo() {
 
             </div>
 
-            <div className="border rounded-lg p-4">
+            <div className="border p-4">
                 <h2 className="text-xl font-semibold mb-4">
                     Raid Details
                 </h2>
