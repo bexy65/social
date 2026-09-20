@@ -20,8 +20,8 @@ function Raids() {
 
     return (
     <>
-        <div className="flex flex-row py-2 my-3 border-b">
-            <select onChange={(e) => setExpansion(e.target.value)} name="expansion" id="expansion" className="border">
+        <div className="flex flex-row p-2 my-3 border-b">
+            <select onChange={(e) => setExpansion(e.target.value)} name="expansion" id="expansion" className="border w-full md:w-2/4 lg:w-1/4">
                 <option value="0">All</option>
                 {expansions.map(exp => (
                     <option key={exp.key} value={exp.key}>
@@ -30,7 +30,7 @@ function Raids() {
                 ))}
             </select>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-3 p-2">
             {filteredRaids.map(raid => (
                 <Raid key={raid.id} raid={raid} />
             ))}

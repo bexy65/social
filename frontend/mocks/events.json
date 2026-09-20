@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "raidId": 11,
+    "raidName": "Tempest Keep",
+    "startsAt": "2026-09-20T18:30:00",
+    "slots": {
+      "total": 25,
+      "filled": 5
+    },
+    "players": [
+      {
+        "id": 101,
+        "name": "Thorin",
+        "role": "tank"
+      },
+      {
+        "id": 102,
+        "name": "Healina",
+        "role": "healer"
+      },
+      {
+        "id": 103,
+        "name": "Shadowx",
+        "role": "dps"
+      },
+      {
+        "id": 104,
+        "name": "Firemage",
+        "role": "dps"
+      },
+      {
+        "id": 105,
+        "name": "Ragnar",
+        "role": "tank"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "raidId": 12,
+    "raidName": "Karazhan",
+    "startsAt": "2026-09-20T20:00:00",
+    "slots": {
+      "total": 10,
+      "filled": 10
+    },
+    "players": [
+      {
+        "id": 201,
+        "name": "Tankmaster",
+        "role": "tank"
+      },
+      {
+        "id": 202,
+        "name": "Holyheal",
+        "role": "healer"
+      },
+      {
+        "id": 203,
+        "name": "Arcania",
+        "role": "dps"
+      },
+      {
+        "id": 204,
+        "name": "Rogueboy",
+        "role": "dps"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "raidId": 11,
+    "raidName": "Tempest Keep",
+    "startsAt": "2026-09-21T19:00:00",
+    "slots": {
+      "total": 25,
+      "filled": 3
+    },
+    "players": [
+      {
+        "id": 301,
+        "name": "Bulwark",
+        "role": "tank"
+      },
+      {
+        "id": 302,
+        "name": "Lifebloom",
+        "role": "healer"
+      },
+      {
+        "id": 303,
+        "name": "Frostbolt",
+        "role": "dps"
+      }
+    ]
+  }
+]
