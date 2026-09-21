@@ -26,12 +26,12 @@ export const routes = [
     {
         path: "/profile",
         element: Account,
-        protected: true
+        protected: false
     },
     {
         path: "/create",
         element: CreateEvent,
-        protected: true
+        protected: false
     },
     {
         path: "/events",

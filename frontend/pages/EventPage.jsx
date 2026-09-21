@@ -47,7 +47,7 @@ function EventPage() {
             </div>
 
 
-            <div className="border rounded-lg p-4 mb-6">
+            <div className="border p-4 mb-6 text-start">
 
                 <h2 className="text-xl font-semibold mb-4">
                     Event Information
@@ -69,7 +69,7 @@ function EventPage() {
             </div>
 
 
-            <div className="border rounded-lg p-4">
+            <div className="border p-4">
 
                 <h2 className="text-xl font-semibold mb-4">
                     Players
