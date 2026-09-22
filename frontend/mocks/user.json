@@ -1,6 +1,7 @@
 {
   "id": 101,
   "username": "Bulwark",
+  "email": "bulwark@email.com",
   "avatar": "/img/avatars/warrior.png",
   "guild": "Eternal Vanguards",
   "mainCharacter": {

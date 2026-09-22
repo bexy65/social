@@ -26,7 +26,7 @@ export const routes = [
     {
         path: "/profile",
         element: Account,
-        protected: false
+        protected: true
     },
     {
         path: "/create",
