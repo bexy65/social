@@ -2,7 +2,7 @@ import { CreateRaidEventForm } from "../components/CreateRaidEventForm";
 
 function CreateEvent() {
     return (
-        <div className="max-w-4xl mx-auto p-6 border my-3">
+        <div className="max-w-xl mx-auto p-6 my-3">
             <CreateRaidEventForm />
         </div>
     )

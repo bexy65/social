@@ -34,7 +34,7 @@ export function CreateRaidEventForm() {
     <div>
       <h2 className='text-start'>Create Raid Event</h2>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">
         <div className='flex flex-col md:flex-row'>
             <div className='border p-2 md:w-3/4 mb-2 md:mb-0'>
                 <label className="block mb-1">Select Raid</label>
