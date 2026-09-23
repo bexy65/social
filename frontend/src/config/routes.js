@@ -6,6 +6,7 @@ import CreateEvent from "../../pages/CreateEvent";
 import Events from "../../pages/Events";
 import RaidPage from "../../pages/RaidPage";
 import EventPage from "../../pages/EventPage";
+import Register from "../../pages/Register";
 
 export const routes = [
     {
@@ -16,6 +17,11 @@ export const routes = [
     {
         path: "/login",
         element: Login,
+        protected: false
+    },
+    {
+        path: "/register",
+        element: Register,
         protected: false
     },
     {

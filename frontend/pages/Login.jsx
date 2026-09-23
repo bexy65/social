@@ -33,7 +33,7 @@ function Login() {
     };
 
     return (
-        <div className="max-w-xl mx-auto my-4">
+        <div className="max-w-md mx-auto mt-4 border">
             <div className="flex flex-col gap-4 p-2 justify-between h-full">
                 {message ?? (
                     <p className="border p-2">
@@ -42,7 +42,10 @@ function Login() {
                 )}
                 <input onChange={(e)=>setEmail(e.target.value)} className="border-b" type="text" name="email" id="email" placeholder="Email.." />
                 <input onChange={(e)=>setPassword(e.target.value)} className="border-b" type="password" name="password" id="password" placeholder="password.." />
-                <button className="self-end border p-2" onClick={handleLogin}>Login</button>
+                <div className="flex flex-row gap-2 justify-between">
+                    <button className="border p-2 w-full lg:w-1/4" onClick={handleLogin}>Login</button>
+                    <button className="border p-2 w-full lg:w-1/4" onClick={()=>navigate('/register')}>Sign Up</button>
+                </div>
             </div>
         </div>
     )

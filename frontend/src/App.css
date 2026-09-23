@@ -8,3 +8,5 @@ body {
 button {
   cursor: pointer !important;
 }
+
+input {padding: 6px;}

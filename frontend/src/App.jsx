@@ -39,7 +39,9 @@ function App() {
               </Routes>
             </main>
 
-            <BottomNav />
+            <div className="lg:hidden">
+              <BottomNav />
+            </div>
 
           </div>
       </BrowserRouter>
