@@ -1,14 +1,21 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 
 function Login() {
-    const { login }  = useAuth();
+    const navigate = useNavigate();
+    const { login, isLoggedIn }  = useAuth();
+
+    useEffect(()=> {
+        if(isLoggedIn){
+            navigate('/events');
+            return;
+        }
+    },[isLoggedIn]);
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setErrorMsg] = useState("");
-
-    const navigate = useNavigate();
 
     const message = error ?? "";
 
@@ -18,7 +25,7 @@ function Login() {
             return;
         } 
 
-        if( await login(email, password)) {
+        if(await login(email, password)) {
             navigate('/events')
         } else {
             setErrorMsg("Error on login")
