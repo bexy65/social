@@ -21,7 +21,7 @@ function RaidInfo() {
         <div className="p-6">
             <div className="my-2 flex flex-row justify-end gap-2">
                 <button className="border w-full md:w-1/4 py-2" onClick={()=> navigate(-1)} > ← Back</button>
-                <button className="border w-full md:w-1/4 py-2" onClick={()=> navigate(`/create/${raid.id}`)} >+ Create</button>
+                <button className="border w-full md:w-1/4 py-2" onClick={()=> navigate(`/create/${raid.id}`)} >+ Create Event</button>
             </div>
             <div className="flex flex-col md:flex-row gap-6 mb-8">
                 <img
