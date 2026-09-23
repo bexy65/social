@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import raidsData from '../mocks/raids.json';
 
-export function CreateRaidEventForm() {
-  const [selectedRaidId, setSelectedRaidId] = useState(raidsData[0]?.id || 1);
+export function CreateRaidEventForm({id}) {
+  const [selectedRaidId, setSelectedRaidId] = useState(id || 1);
   const [selectedDifficulty, setSelectedDifficulty] = useState('');
   const [startsAt, setStartsAt] = useState('');
 

@@ -24,6 +24,11 @@ export const routes = [
         protected: false
     },
     {
+        path: "/raid/:id",
+        element: RaidPage,
+        protected: false
+    },
+    {
         path: "/profile",
         element: Account,
         protected: true
@@ -34,13 +39,13 @@ export const routes = [
         protected: false
     },
     {
-        path: "/events",
-        element: Events,
+        path: "/create/:id",
+        element: CreateEvent,
         protected: false
     },
     {
-        path: "/raid/:id",
-        element: RaidPage,
+        path: "/events",
+        element: Events,
         protected: false
     },
     {
