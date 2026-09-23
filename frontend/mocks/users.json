@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "username": "ShadowWolf",
+    "displayName": "ShadowWolf",
+    "avatar": "/avatars/user-1.jpg",
+    "level": 42,
+    "rating": 1850,
+    "createdAt": "2025-04-12T14:20:00Z"
+  },
+  {
+    "id": 2,
+    "username": "Luna",
+    "displayName": "Luna",
+    "avatar": "/avatars/user-2.jpg",
+    "level": 38,
+    "rating": 1720,
+    "createdAt": "2025-08-19T10:15:00Z"
+  },
+  {
+    "id": 3,
+    "username": "TankMaster",
+    "displayName": "TankMaster",
+    "avatar": "/avatars/user-3.jpg",
+    "level": 55,
+    "rating": 2100,
+    "createdAt": "2024-11-03T18:42:00Z"
+  }
+]

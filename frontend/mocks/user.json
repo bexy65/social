@@ -1,0 +1,35 @@
+{
+  "id": 101,
+  "username": "Bulwark",
+  "email": "bulwark@email.com",
+  "avatar": "/img/avatars/warrior.png",
+  "guild": "Eternal Vanguards",
+  "mainCharacter": {
+    "name": "Bulwark",
+    "class": "warrior",
+    "spec": "protection",
+    "role": "tank",
+    "itemLevel": 213,
+    "level": 80
+  },
+  "altCharacters": [
+    {
+      "id": 201,
+      "name": "Lightbringer",
+      "class": "paladin",
+      "spec": "holy",
+      "role": "healer",
+      "itemLevel": 208,
+      "level": 80
+    },
+    {
+      "id": 202,
+      "name": "Shadowbolt",
+      "class": "warlock",
+      "spec": "affliction",
+      "role": "dps",
+      "itemLevel": 200,
+      "level": 80
+    }
+  ]
+}

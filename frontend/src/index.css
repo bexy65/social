@@ -42,3 +42,7 @@ h2 {
 p {
   margin: 0;
 }
+
+.shadow-element {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
