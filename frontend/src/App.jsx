@@ -15,7 +15,7 @@ function App() {
 
             <Header />
 
-            <main className="flex-1 min-h-0 overflow-y-auto max-w-xl mx-auto w-full">
+            <main className="flex-1 min-h-0 overflow-y-auto max-w-2xl mx-auto w-full border ">
               <Routes>
                 {routes.map(route => {
                   const Page = route.element;

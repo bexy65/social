@@ -33,7 +33,7 @@ function Login() {
     };
 
     return (
-        <div className="border">
+        <div className="max-w-md mx-auto">
             <div className="flex flex-col gap-4 p-2 justify-between h-full">
                 {message ?? (
                     <p className="border p-2">

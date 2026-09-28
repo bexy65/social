@@ -19,7 +19,7 @@ function Raid( {raid, ...props} ) {
         <>
             <div onClick={()=>handleRaidInfo(raid)} className="border cursor-pointer lg:hover:-translate-y-2 transition ">
                 <div>
-                    <h2 className="font-semibold text-start p-2">{raid.name}</h2>
+                    <p className="font-semibold text-l text-start p-2">{raid.name}</p>
                 </div>
                 <img
                     src={raid.image}
