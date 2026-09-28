@@ -20,7 +20,7 @@ function Posts() {
 
     return (
         <>
-            <main className="h-full flex-1 overflow-y-auto px-2 lg:px-0 pb-16">
+            <main className="h-full flex-1 overflow-y-auto px-2">
                 <div className=" text-start p-2 mx-auto max-w-2xl border-b">
                     <div className="m-0 ">what u think?</div>
                     <div className="">
