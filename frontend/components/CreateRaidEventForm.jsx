@@ -31,8 +31,10 @@ export function CreateRaidEventForm({id}) {
   };
 
   return (
-    <div>
-      <h2 className='text-start'>Create Raid Event</h2>
+    <div className='px-2'>
+      <div className='my-4'>
+        <h2 className='text-start'>Create Raid Event</h2>
+      </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">
         <div className='flex flex-col md:flex-row'>
@@ -98,7 +100,7 @@ export function CreateRaidEventForm({id}) {
 
 
 
-        <button type="submit" className="w-full md:w-50 border">
+        <button type="submit" className="w-full md:w-1/2 border">
           Create Raid Event
         </button>
       </form>

@@ -18,19 +18,15 @@ function Raid( {raid, ...props} ) {
     return (
         <>
             <div onClick={()=>handleRaidInfo(raid)} className="border cursor-pointer lg:hover:-translate-y-2 transition ">
-                <div>
-                    <p className="font-semibold text-l text-start p-2">{raid.name}</p>
-                </div>
+                <label className="font-semibold text-start p-2">{raid.name}</label>
                 <img
                     src={raid.image}
                     alt={raid.name}
                     className="w-full aspect-video object-cover"
                 />
-                <div>
-                    <div className="border-t p-2 flex flex-row justify-between">
-                        <p className="m-0">Level: {raid.level}</p>
-                        <p className="m-0">Size: {returnSize(raid.sizes)}</p>
-                    </div>
+                <div className="border-t p-2 flex flex-row justify-between">
+                    <p className="m-0">Level: {raid.level}</p>
+                    <p className="m-0">Size: {returnSize(raid.sizes)}</p>
                 </div>
             </div>
         </>

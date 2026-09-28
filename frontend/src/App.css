@@ -3,10 +3,22 @@ body {
   font-family: 'Inter', serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 16px;
+}
+
+label { 
+  font-weight: 600;
 }
 
 button {
   cursor: pointer !important;
 }
 
-input {padding: 6px;}
+select {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+input {
+  padding: 6px;
+}

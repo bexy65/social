@@ -1,5 +1,6 @@
 import events from '../mocks/events.json'
 import { useNavigate } from "react-router-dom";
+import { formatDate } from '../src/utils/helpers';
 
 function Events() {
     const navigate = useNavigate();
@@ -29,7 +30,7 @@ function Events() {
                     </div>
 
                     {/* Needs timer to be added to countdown and show start and countdown */}
-                    <p className='w-1/4'>{e.startsAt}</p>
+                    <p className='w-1/4'>{formatDate(e.startsAt)}</p>
 
                     <p className='w-1/4'>{e.slots.filled} / {e.slots.total} </p>
                     <div className='w-1/4 flex flex-col md:flex-row gap-2'>
