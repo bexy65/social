@@ -16,7 +16,7 @@ function Events() {
 
     return (
         <>
-        <div className='p-2 h-full'>
+        <div className=''>
             <div className='flex flex-row my-2'>
                 <p>Total Raids open: {openEvents.length}</p>
             </div>
