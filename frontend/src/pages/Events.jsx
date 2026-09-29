@@ -1,6 +1,6 @@
 import events from '../mocks/events.json'
 import { useNavigate } from "react-router-dom";
-import { formatDate } from '../src/utils/helpers';
+import { formatDate } from '../utils/helpers';
 
 function Events() {
     const navigate = useNavigate();
@@ -33,12 +33,12 @@ function Events() {
 
                     <div className='w-1/4 flex flex-col md:flex-row gap-2'>
                         <button onClick={handleJoinRequest} className='button w-full border'>
-                            <i class="fa-solid fa-square-plus"></i>
+                            <i className="fa-solid fa-square-plus"></i>
                         </button>
 
                         {/* open modal to text to event creater */}
                         <button onClick={handleDMLeader} className='button w-full border'>
-                        <i class="fa-regular fa-envelope"></i>
+                            <i className="fa-regular fa-envelope"></i>
                         </button>
                     </div>
 

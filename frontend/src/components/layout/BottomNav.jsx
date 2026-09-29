@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { navigation } from "../../src/config/navigation";
+import { navigation } from "../../config/navigation";
 
 function BottomNav() {
     return (

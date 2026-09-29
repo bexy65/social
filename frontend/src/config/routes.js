@@ -1,12 +1,12 @@
-import Home from "../../pages/Home";
-import Login from "../../pages/Login";
-import Raids from "../../pages/Raids";
-import Account from "../../pages/Account";
-import CreateEvent from "../../pages/CreateEvent";
-import Events from "../../pages/Events";
-import RaidPage from "../../pages/RaidPage";
-import EventPage from "../../pages/EventPage";
-import Register from "../../pages/Register";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import Raids from "../pages/Raids";
+import Account from "../pages/Account";
+import CreateEvent from "../pages/CreateEvent";
+import Events from "../pages/Events";
+import RaidPage from "../pages/RaidPage";
+import EventPage from "../pages/EventPage";
+import Register from "../pages/Register";
 
 export const routes = [
     {

@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import Header from "../components/layout/Header";
-import BottomNav from "../components/layout/BottomNav";
-import ProtectedRoute from "../components/ProtectedRoute";
+import Header from "./components/layout/Header";
+import BottomNav from "./components/layout/BottomNav";
+import ProtectedRoute from "./components/ProtectedRoute";
 import { routes } from "./config/routes";
-import { AuthProvider } from "../context/AuthContext";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
