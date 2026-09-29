@@ -41,8 +41,8 @@ function Register() {
     };
 
     return (
-        <div className="max-w-md mx-auto">
-            <div className="flex flex-col gap-4 p-2 border justify-between h-full">
+        <div className="max-w-md mx-auto mt-4">
+            <div className="flex flex-col gap-4 p-2 justify-between h-full">
                 {message ?? (
                     <p className="border p-2">
                         {message}

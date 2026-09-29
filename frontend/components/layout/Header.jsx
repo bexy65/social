@@ -3,7 +3,7 @@ import BottomNav from "./BottomNav";
 
 function Header(){
     return (
-        <div className="flex w-full text-2xl items-center h-16 sticky gap-3 justify-between inset-x-0 top-0 bg-blue-300 m-0">
+        <div className="flex w-full text-lg items-center h-16 sticky gap-3 justify-between inset-x-0 top-0 bg-blue-300 m-0">
             <div className="p-2 w-1/4 text-start flex">
                 <NavLink to={'/'}> World Of Warcraft </NavLink>
             </div>

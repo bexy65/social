@@ -21,8 +21,8 @@ function Posts() {
                 <div className=" text-start py-2 mx-auto max-w-2xl border-b">
                     <div className="m-0 h-full flex-col">
                         <input type="text" placeholder="What you think?" className="border w-full" />
-                        <div className="w-full text-end my-2">
-                            <button className="border w-full md:w-1/2 h-12">Share</button>
+                        <div className="w-full text-end mt-2">
+                            <button className="border w-full md:w-1/4 h-8">Share</button>
                         </div>
                     </div>
                 </div>

@@ -14,6 +14,10 @@ button {
   cursor: pointer !important;
 }
 
+p {
+  margin: 0px !important;
+}
+
 select {
   padding-top: 8px;
   padding-bottom: 8px;
