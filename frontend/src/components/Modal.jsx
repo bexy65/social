@@ -1,18 +1,25 @@
-function Modal({onClose}) {
+function Modal({onClose, handleAction, message, title}) {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-            <div className="w-full max-w-md rounded-lg bg-white p-6">
-                <h2 className="text-xl font-bold">
-                    Join event
-                </h2>
+            <div className="w-full flex flex-col items-start gap-2 max-w-md bg-white p-6">
+                <div className="w-full ">
+                    <p className="text-xl font-bold">
+                        {title && title}
+                    </p>
+                </div>
 
-                <p className="my-2">
-                    Do you want to send a join request?
+                <p className="py-2">
+                    {message && message}
                 </p>
                 
-                <button onClick={onClose}>
-                    Cancel
-                </button>
+                <div className="flex flex-col w-full lg:flex-row gap-2">
+                    <button className="border p-2 w-full lg:w-1/4" onClick={handleAction}>
+                        Send
+                    </button>
+                    <button className="border p-2 w-full lg:w-1/4" onClick={onClose}>
+                        Cancel
+                    </button>
+                </div>
             </div>
         </div>
     );

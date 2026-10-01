@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import raids from "../mocks/raids.json";
+import BackButton from "../components/BackButton";
 
 function RaidInfo() {
     const { id } = useParams();
@@ -12,7 +13,7 @@ function RaidInfo() {
         return (
         <div>
             <h1>Raid not found</h1>
-            <button className="border w-1/4 py-2" onClick={()=> navigate(-1)} > ← Back</button>
+            <BackButton  className="border w-1/4 py-2" />
         </div>
         );
     }
@@ -20,7 +21,9 @@ function RaidInfo() {
     return (
         <div className="p-6">
             <div className="my-2 flex flex-row justify-end gap-2">
-                <button className="border w-full md:w-1/4 py-2" onClick={()=> navigate(-1)} > ← Back</button>
+                
+                <BackButton className="border w-full md:w-1/4 py-2"/>
+
                 <button className="border w-full md:w-1/4 py-2" onClick={()=> navigate(`/create/${raid.id}`)} >+ Create Event</button>
             </div>
             <div className="flex flex-col md:flex-row gap-6 mb-8">

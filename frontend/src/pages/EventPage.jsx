@@ -1,11 +1,28 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import events from "../mocks/events.json";
+import { useState } from "react";
+import  BackButton  from "../components/BackButton"
 
 function EventPage() {
     const { id } = useParams();
-    const navigate = useNavigate();
+    const [joining, setJoining] = useState(false);
+    const [messaging, setMessaging] = useState(false);
 
     const event = events.find(e => e.id === Number(id));
+
+    const handleJoinRequest = () => {
+        setJoining(true);
+
+        console.log("Sending join request!");
+
+    }
+
+    const handleDMLeader = () => {
+        setMessaging(true);
+        console.log("Sending dm request!");
+        console.log("Should open new page with the chat or open chat ?!");
+
+    }
 
     if (!event) {
         return (
@@ -14,12 +31,8 @@ function EventPage() {
                     Event not found
                 </h1>
 
-                <button
-                    className="button border p-2"
-                    onClick={() => navigate(-1)}
-                >
-                    ← Back
-                </button>
+                <BackButton className="button border p-2" />
+
             </div>
         );
     }
@@ -38,12 +51,8 @@ function EventPage() {
                     </p>
                 </div>
 
-                <button
-                    className="button border p-2"
-                    onClick={() => navigate(-1)}
-                >
-                    ← Back
-                </button>
+                <BackButton className="button border p-2" />
+
             </div>
 
 
@@ -93,12 +102,20 @@ function EventPage() {
 
             <div className="flex gap-2 mt-6">
 
-                <button className="button border p-2">
-                    Request
+                <button
+                    onClick={handleJoinRequest}
+                    disabled={joining}
+                    className="button border p-2"
+                >
+                    {joining ? "Loading..." : "Join"}
                 </button>
 
-                <button className="button border p-2">
-                    DM Leader
+                <button
+                    onClick={handleDMLeader}
+                    disabled={messaging}
+                    className="button border p-2"
+                >
+                    {messaging ? "Loading..." : "DM Leader"}
                 </button>
 
             </div>

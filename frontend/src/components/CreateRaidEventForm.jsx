@@ -100,7 +100,7 @@ export function CreateRaidEventForm({id}) {
 
 
 
-        <button type="submit" className="w-full md:w-1/2 border">
+        <button type="submit" className="w-full md:w-1/2 border py-2">
           Create Raid Event
         </button>
       </form>
