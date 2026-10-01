@@ -1,7 +1,7 @@
 export const navigation = [
     {
         path: "/",
-        label: "Find"
+        label: "Feed"
     },
     {
         path: "/raids",
