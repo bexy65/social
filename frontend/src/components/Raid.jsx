@@ -16,20 +16,24 @@ function Raid( {raid, ...props} ) {
 
     return (
         <>
-            <div onClick={()=>handleRaidInfo(raid)} className="border cursor-pointer lg:hover:-translate-y-2 transition ">
-                <label className="font-semibold text-start p-2">{raid.name}</label>
-                <img
-                    src={raid.image}
-                    alt={raid.name}
-                    className="w-full aspect-video object-cover"
-                />
-                <div className="border-t p-2 flex flex-row justify-between">
-                    <p className="m-0">Level: {raid.level}</p>
-                    <p className="m-0">Size: {returnSize(raid.sizes)}</p>
+            <div className="border cursor-pointer lg:hover:-translate-y-2 transition ">
+                <div onClick={()=>handleRaidInfo(raid)}>
+                    <div className="flex flex-row items-center justify-between p-2">
+                        <p className="">{raid.level}</p>
+                        <label className="font-semibold text-start">{raid.name}</label>
+                    </div>
+                    <img
+                        src={raid.image}
+                        alt={raid.name}
+                        className="w-full aspect-video object-cover"
+                    />
+                </div>
+                <div className="text-start">
+                    <button onClick={()=>navigate(`/create/${raid.id}`)} className="border m-2 p-2 w-full lg:w-1/2">Create Event</button>
                 </div>
             </div>
         </>
-    )
+    ) 
 }
 
 export default Raid;

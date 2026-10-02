@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import raidsData from '../mocks/raids.json';
+import BackButton from './BackButton';
 
 export function CreateRaidEventForm({id}) {
   const [selectedRaidId, setSelectedRaidId] = useState(id || 1);
@@ -32,8 +33,9 @@ export function CreateRaidEventForm({id}) {
 
   return (
     <div className='px-2'>
-      <div className='my-4'>
-        <h2 className='text-start'>Create Raid Event</h2>
+      <div className='my-4 flex items-center textg-center flex-row justify-between'>
+        <p className='text-start text-2xl'>Create Raid Event</p>
+        <BackButton className='p-2 border'/>
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">

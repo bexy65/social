@@ -7,6 +7,17 @@ import { useSendRequest } from "../hooks/SendRequestHook";
 function Events() {
     const navigate = useNavigate();
     const openEvents = events.filter(e => e.slots.filled < e.slots.total);
+
+    const openTbcEvents = events.filter(e =>
+        e.expansion === "the_burning_crusade" &&
+        e.slots.filled < e.slots.total
+    );
+
+    const openWotlkEvents = events.filter(e =>
+        e.expansion === "wrath_of_the_lich_king" &&
+        e.slots.filled < e.slots.total
+    );
+
     const { sendRequest, loading } = useSendRequest();
     //Make custom hooks later!
     function handleDMLeader() {
@@ -20,6 +31,13 @@ function Events() {
     return (
         <>
         <div className='max-w-2xl mx-auto px-2 mt-4 flex flex-col gap-3 text-md lg:text-lg '>
+            
+            <div className="flex flex-col lg:flex-row gap-2">
+                <p>Total Open: {openEvents.length}</p>
+                <p>TBC: {openTbcEvents.length}</p>
+                <p>WOTLK: {openWotlkEvents.length}</p>
+            </div>
+
             {openEvents.map(e => (
                 <div className='flex flex-row gap-2 justify-center items-center text-start py-3 px-2 border' key={e.id}>
 

@@ -3,6 +3,7 @@
     "id": 1,
     "raidId": 11,
     "raidName": "Tempest Keep",
+    "expansion": "wrath_of_the_lich_king",
     "startsAt": "2026-09-20T18:30:00",
     "slots": {
       "total": 25,
@@ -40,6 +41,7 @@
     "id": 2,
     "raidId": 12,
     "raidName": "Karazhan",
+    "expansion": "the_burning_crusade",
     "startsAt": "2026-09-20T20:00:00",
     "slots": {
       "total": 10,
@@ -72,6 +74,7 @@
     "id": 3,
     "raidId": 11,
     "raidName": "Tempest Keep",
+    "expansion": "wrath_of_the_lich_king",
     "startsAt": "2026-09-21T19:00:00",
     "slots": {
       "total": 25,
