@@ -28,8 +28,8 @@ function Raid( {raid, ...props} ) {
                         className="w-full aspect-video object-cover"
                     />
                 </div>
-                <div className="text-start">
-                    <button onClick={()=>navigate(`/create/${raid.id}`)} className="border m-2 p-2 w-full lg:w-1/2">Create Event</button>
+                <div className="text-end p-2">
+                    <button onClick={()=>navigate(`/create/${raid.id}`)} className="border p-2 w-full lg:w-1/2">Create Event</button>
                 </div>
             </div>
         </>
